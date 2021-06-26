@@ -1,0 +1,150 @@
+     <!DOCTYPE html>
+<html>
+<head>
+	<title>Front End Design</title>
+	<meta charset="utf-8">
+	<meta name="Front End Web Design" content="Complete Website Design">
+	<meta name="keywords" content="HTML,CSS,Front End">
+	<meta name="author" content="Reggie Adino">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="frontend.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" type="text/css" href="media.css">
+	<link rel="stylesheet" type="text/css" href="lightbox.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Montserrat:ital@1&family=Sacramento&display=swap" rel="stylesheet">
+	<link rel="icon" href="images/icon.ico">
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/cycle2.js"></script>
+	<script type="text/javascript" src="js/lightbox.min.js"></script>
+	<script type="text/javascript" src="frontend.js"></script>
+	<script type="text/javascript" src="js/declarativeToggle.js"></script>
+</head>
+<body>
+	<header>
+	<div class="headermenu clear">
+		<nav class="navbar clear">
+			<img src="Images/Logo-4.png" alt="website logo" width="200">
+			<input type="text" name="search" 
+			class="mysearchbar" placeholder="search" size="20">
+			<input type="submit" value="search" size="2.5" class="mysearchbutton">
+
+			<ul class="mymenu">
+				<li class="drop"><a href="javascript:void(0)" class="active">Menu</a>
+					<div class="drop-content">
+						<a href="index2.html">Home</a>
+						<a href=blog.html"">Blog</a>
+						<a href="media.html">Media</a>
+						<a href="signup.html">Signup</a>
+						<a href="login.html">Login</a>
+						<a href="contact.html">Contact</a>
+						<a href="about.html">About</a>
+					</div>
+					</li>
+				<li><a href="blog.html">Blog</a></li>
+				<li class="drop2"><a href="javascript:void(0)">Media</a>
+						<div class="mediadrop-content">
+							<a href="media.html">Video</a>
+							<a href="media.html">Audio</a>
+							<a href="media.html">Photos</a>
+							<a href="media.html">Slides</a>
+						</div>
+				</li>
+				<li><a href="signup.html">Signup</a></li>
+				<li><a href="login.html">Login</a></li>
+				<li><a href="contact.html">Contact</a></li>
+				<li><a href="about.html">About</a></li>
+			</ul>
+		</nav>
+		<span data-toggle-target=".navbar" class="toggle-btn"><img src="images/menu.png" alt="menu toggle button"> </span>
+	</div>
+	</header>
+	<div class="site-container">
+		<div class="media-header">
+			<h1>Best Cinema Gallery</h1>
+			<h2>Have fun & entertain yourself...</h2>
+		</div>
+		<!--slides --> 
+		<div class="media-container">
+			<div class="cycle-slideshow" data-cycle-slides='.slide' data-cycle-pause-on-hover='true'>
+				<span class="cycle-prev"><img src="images/prev.png"></span>
+				<span class="cycle-next"><img src="images/next.png"></span>
+				<span class="cycle-pager"></span>
+				<div class="slide">
+					<img src="images/FrontEndSlid.png" alt="First Flower">
+				</div>
+				<div class="slide">
+					<img src="images/FrontEndSlid1.png" alt="Second Flower">
+				</div>
+				<div class="slide">
+					<img src="images/FrontEndSlid2.png" alt="First Bird">
+				</div>
+				<div class="slide">
+					<img src="images/FrontEndSlid3.png" alt="Third Flower">
+				</div>
+				<div class="slide">
+					<img src="images/FrontEndSlid4.png" alt="Second Flower">
+				</div>
+			</div>
+		</div>
+		<div class="Photo-Gallery-1">
+			<h1>Photo Gallery 1</h1>
+			<div class="thumbnails">
+				<a href="images/Aeroplane.png" data-lightbox="gallery"><img src="images/Aeroplane-thumb.png"></a>  
+				<a href="images/Bike.png" data-lightbox="gallery" data-title = "Bike"><img src="images/Bike-thumb.png"></a> 
+				<a href="images/car.png" data-lightbox="gallery"data-title = "Car"><img src="images/Car-thumb.png"></a> 
+				<a href="images/purple-tree.png" data-lightbox="gallery" data-title = "Purple tree"><img src="images/purple-tree-thumb.png"></a> 
+				<a href="images/Parrot.png" data-lightbox="gallery" data-title = "Parrot"><img src="images/parrot-thumb.png"></a> 
+				<a href="images/puppy.png" data-lightbox="gallery" data-title = "Puppy"><img src="images/puppy-thumb.png"></a> 
+				<a href="images/YellowFish.png" data-lightbox="gallery" data-title = "Yellow Fish"><img src="images/yellowfish-thumb.png"></a> 
+				<a href="images/water.png" data-lightbox="gallery" data-title = "Water"><img src="images/water-thumb.png"></a> 
+			</div>
+		</div>
+		<div class="embedded videos">
+			<h1>Embedded Videos</h1>	
+			<div class="watch">	
+				<video src="videos/FREE stock footage Dj Techno Music Club Disco Party Entertainment.mp4" controls poster="videos/cover.jpg"> Your browser does not support this video</video>
+			</div>
+		</div>
+		<div class="embedded-audios">
+			<h1>Embedded Audios</h1>
+			<div class="audio">
+				<a onclick="playclip()"><img src="audios/audio.jpg" alt="audio cover" class="imgaudio"></a>
+				<audio controls class="mp3">
+					<source src="audios/Jingle-Bells.mp3">
+				</audio>	
+			</div>
+		</div>
+		<div class="photo-gallery-2">
+			<h1>Photo Gallery 2</h1>
+			<div class="photo-thumbnails" >
+				<img onmouseover ="preview.src=Flower.src" src="images/Flower.png" alt="Flower" name="Flower">
+				<img onmouseover ="preview.src=Love.src" src="images/Love.png" alt="Love" name="Love">
+				<img onmouseover ="preview.src=Nature.src" src="images/Nature.png" alt="Nature" name="Nature">
+				<img onmouseover ="preview.src=Palm.src" src="images/Palm.png" alt="Palm" name="Palm">
+			</div>
+			<div class="preview">
+				<img name ="preview" src="images/Flower.png" alt="FLower">
+			</div>
+		</div>
+		<div class="css-stripes">
+				<h1>CSS Stripes</h1>
+				<nav class="str">
+					<ul class="mystr">
+						<li class="home"><a href="#">Home</a></li>
+						<li class="chat"><a href="#">Chat</a></li >
+						<li class="mail" ><a href="#">Email</a></li>
+						<li class="phone"><a href="#">Phone</a></li>
+					</ul>
+				</nav>
+		</div>
+	 </div>
+	<footer>
+		<div class="bottom-site">
+		<a href="https://www.facebook.com" class="footer-link">Facebook</a>
+		<a href="https://www.twitter.com" class="footer-link">Twitter</a>
+		<a href="https://www.google.com" class="footer-link">Google</a>
+		<p class="copyright">&copy;2021 AdinoRights</p>
+	</div>
+	</footer>
+</body>
+</html>

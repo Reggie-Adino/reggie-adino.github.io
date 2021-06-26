@@ -1,0 +1,141 @@
+/*Media Header*/
+.media-container{
+	max-width: 100%;
+	margin: auto auto;
+	padding: 0 20%;
+}
+
+.media-header{
+	background-color: #90ee90;
+	padding: 50px 20px;
+	margin-bottom: 30px;
+}
+/*slide-show*/
+.slide{
+	width: 100%;
+	position: relative;
+}
+
+/*Slide next and Prev buttons*/
+.cycle-next{
+	position: absolute;
+	left: 70%;
+	top: 40%;
+	opacity: 0;
+	z-index: 200;
+	transition: opacity .5s;
+}
+.cycle-prev{
+	position: absolute;
+	right: 70%;
+	top: 40%;
+	opacity: 0;
+	z-index: 200;
+	transition: opacity .5s;
+}
+.cycle-slideshow:hover .cycle-prev,
+.cycle-slideshow:hover .cycle-next{
+	opacity: 1;
+}
+
+/*Cycle Pager*/
+.cycle-pager{
+	position: absolute;
+	bottom: 20px;
+	z-index: 300;
+}
+.cycle-pager span{
+	display: block;
+	text-indent: -9999px;
+	width: 10px;
+	height: 10px;
+	background-color: #fff;
+	border-radius: 50%;
+	margin: 0 5px;  
+	cursor: pointer;  
+}
+.cycle-pager .cycle-pager-active{
+	background-color: grey;
+}
+
+/*Photo Gallery 1*/
+
+.thumbnails img{
+	width: 20%;
+	padding:10px 10px;
+	transition: all.10s ease-in-out; 
+}
+
+.thumbnails:hover img{
+	opacity: .5;
+	transform: scale(.92);
+}
+
+.thumbnails img:hover{
+	opacity: 1;
+	transform: scale(1) rotate(10deg);
+	box-shadow: 0 0 7px rgba(0,0,0,0.5);
+}
+
+/*videos*/
+.watch video{
+	width: 50%;
+	border-radius: 10px;
+}
+
+/*Audios*/
+.imgaudio{
+	width: 50%;
+	height: 40;
+	border-radius: 5px 5px  0 0;
+}
+.mp3{
+	width: 50%;
+}
+
+/*photo gllery 2*/
+
+.photo-thumbnails img{
+	height: 50px;
+	border-bottom: 4px solid darkgreen;
+	padding: 1px;
+	margin: 0 10px 10px 0;
+}
+.photo-thumbnails img:hover{
+	border: 4px solid lightgreen;
+	cursor: pointer;
+}
+.preview img{
+	border: 4px solid darkgreen;
+	padding: 1px;
+	width: 80%;
+}
+
+/*CSS Stripes*/
+.str li{
+	list-style-type: none;
+	display: inline-block;
+
+}
+
+
+.str a{
+	width: 50px;
+	height: 50px;
+	color: black;
+	background-image: url(images/stripe.png);
+	text-indent: -9999px;
+	display: block;
+	background-repeat: no-repeat;
+}
+
+.home a:hover{background-position: -50px 0;}
+
+.chat a{background-position: 0 -50px;}
+.chat a:hover{background-position: -50px -50px;}
+
+.mail a{background-position: 0 -100px;}
+.mail a:hover{background-position: -50px -100px;}
+
+.phone a{background-position: 0 -150px;}
+.phone a:hover{background-position: -50px -150px;}

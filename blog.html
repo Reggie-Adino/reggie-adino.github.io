@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Front End Design</title>
+	<meta charset="utf-8">
+	<meta name="Front End Web Design" content="Complete Website Design">
+	<meta name="keywords" content="HTML,CSS,Front End">
+	<meta name="author" content="Reggie Adino">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="frontend.css" rel="stylesheet" type="text/css" />
+	<link rel="icon" href="images/icon.ico">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Montserrat:ital@1&family=Sacramento&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="blog.css">
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/declarativeToggle.js"></script>
+</head>
+<body>
+	<header>
+	<div class="headermenu clear">
+		<nav class="navbar clear">
+			<img src="Images/Logo-4.png" alt="website logo" width="200">
+			<input type="text" name="search" 
+			class="mysearchbar" placeholder="search" size="20">
+			<input type="submit" value="search" size="2.5" class="mysearchbutton">
+
+			<ul class="mymenu">
+				<li class="drop"><a href="javascript:void(0)" class="active">Menu</a>
+					<div class="drop-content">
+						<a href="index2.html">Home</a>
+						<a href=blog.html"">Blog</a>
+						<a href="media.html">Media</a>
+						<a href="signup.html">Signup</a>
+						<a href="login.html">Login</a>
+						<a href="contact.html">Contact</a>
+						<a href="about.html">About</a>
+					</div>
+					</li>
+				<li><a href="blog.html" class="active">Blog</a></li>
+				<li class="drop2"><a href="javascript:void(0)">Media</a>
+						<div class="mediadrop-content">
+							<a href="media.html">Video</a>
+							<a href="media.html">Audio</a>
+							<a href="media.html">Photos</a>
+							<a href="media.html">Slides</a>
+						</div>
+				</li>
+				<li><a href="signup.html">Signup</a></li>
+				<li><a href="login.html">Login</a></li>
+				<li><a href="contact.html">Contact</a></li>
+				<li><a href="about.html">About</a></li>
+			</ul>
+		</nav>
+		<span data-toggle-target=".navbar" class="toggle-btn"><img src="images/menu.png" alt="menu toggle button"> </span>
+	</div>
+	</header>
+	<div class="site-container clear">
+		<div class="blog-header">
+			<h1>The Lion King</h1>
+			<h2>My best Cartoon movie!</h2>
+		</div>
+
+		<div class="blog-content">
+			<div class="blog-main-area">
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Accumsan in nisl nisi scelerisque eu ultrices vitae auctor. Lorem ipsum dolor sit amet consectetur adipiscing elit pellentesque habitant.</p> 
+
+				<div class="image-banner">
+					<img src="Images/LionKing.jpg">
+					<div class="banner-description">
+						<p>
+							Faucibus scelerisque eleifend donec pretium. Imperdiet proin fermentum leo vel orci porta. In nibh mauris cursus mattis molestie.
+						</p>
+					</div>
+				</div>
+				
+				
+				<p> Amet nisl suscipit adipiscing bibendum est ultricies integer. A pellentesque sit amet porttitor. Consectetur a erat nam at lectus urna duis. Dui sapien eget mi proin sed libero. Pharetra diam sit amet nisl suscipit.Ac turpis egestas maecenas pharetra convallis posuere morbi leo urna. </p>
+
+				<div class="blog-box">
+					<p>
+						<strong>
+							Purus faucibus ornare suspendisse sed nisi lacus sed viverra tellus. Integer feugiat scelerisque varius morbi enim. Congue quisque egestas diam in arcu cursus euismod quis viverra.
+						</strong>
+					</p>
+				</div>
+
+				<p> Tellus in hac habitasse platea dictumst vestibulum rhoncus. Dui accumsan sit amet nulla facilisi morbi. Tristique senectus et netus et malesuada fames. Urna condimentum mattis pellentesque id nibh tortor id.</p>
+
+				<div class="sun">
+					<p>Beautiful Sun</p>
+				</div>
+
+				<p> Vehicula ipsum a arcu cursus vitae congue mauris rhoncus. Sed euismod nisi porta lorem mollis aliquam. Etiam sit amet nisl purus in mollis. Mauris commodo quis imperdiet massa.</p>
+
+				<table class="myitems">
+					<thead>
+						<tr>
+							<th class="tname">Item Name</th>
+							<th class="tqt">Quantity</th>
+							<th class="tp">Price</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Apple</td>
+							<td>150</td>
+							<td>10.00</td>
+						</tr>
+						<tr>
+							<td>Lollipop</td>
+							<td>250</td>
+							<td>80.00</td>
+						</tr>
+						<tr>
+							<td>Kettle</td>
+							<td>10</td>
+							<td>2000.00</td>
+						</tr>
+						<tr>
+							<td>Electronics(Television,Radio & DVD)</td>
+							<td>400</td>
+							<td>5000.00</td>
+						</tr>
+						<tr>
+							<td>Apple</td>
+							<td>150</td>
+							<td>10.00</td>
+						</tr>
+						<tr>
+							<td>Lollipop</td>
+							<td>250</td>
+							<td>80.00</td>
+						</tr>
+						<tr>
+							<td>Kettle</td>
+							<td>10</td>
+							<td>2000.00</td>
+						</tr>
+						<tr>
+							<td>Electronics(Television,Radio & DVD)</td>
+							<td>400</td>
+							<td>5000.00</td>
+						</tr>
+					</tbody>
+				</table>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<span data-toggle-target=".full-text" data-toggle-text="Hide Text..." class="toggle-btn read-more">Read more...</span></p>
+					
+					<div class="full-text">
+					<h1>Web Developers</h1>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				</div>
+			</div>
+			<aside class="blog-sidebar">
+				<h1>Simba</h1>
+				<p>Pretium quam vulputate dignissim suspendisse in est ante in nibh. Nec sagittis aliquam malesuada bibendum. Augue mauris augue neque gravida. </p>
+				<img src="images/simba1.png">
+
+				<div class="Newsletter">
+					<h1>Newsletter</h1>
+					<form action="" method="post">
+						<label for="email">Email</label>
+						<input type="email" name="email" id="email" placeholder="email">
+						<label for="password">Password</label>
+						<input type="password" name="password" id="password" placeholder=password">
+						<select>
+							<option>Daily</option>
+							<option>Weekly</option>
+							<option>Monthly</option>
+							<option>Yearly</option>
+						</select>
+						<input type="submit" name="submit" value="signup">
+						<label>
+							<input type="checkbox" checked="checked" ="" value="yes">
+							<span>Stay signed in</span>
+						</label>
+					</form>
+				</div>
+			</aside>
+		</div>				
+	</div>
+	<footer>
+		<div class="bottom-site">
+		<a href="https://www.facebook.com" class="footer-link">Facebook</a>
+		<a href="https://www.twitter.com" class="footer-link">Twitter</a>
+		<a href="https://www.google.com" class="footer-link">Google</a>
+		<p class="copyright">&copy;2021 AdinoRights</p>
+	</div>
+	</footer>
+</body>
+</html>

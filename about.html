@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Front End Design</title>
+	<meta charset="utf-8">
+	<meta name="Front End Web Design" content="Complete Website Design">
+	<meta name="keywords" content="HTML,CSS,Front End">
+	<meta name="author" content="Reggie Adino">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="frontend.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" type="text/css" href="about.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Montserrat:ital@1&family=Sacramento&display=swap" rel="stylesheet">
+	<link rel="icon" href="images/icon.ico">
+	<script type="text/javascript" src="js/declarativeToggle.js"></script>
+</head>
+<body>
+	<header>
+	<div class="headermenu clear">
+		<nav class="navbar clear">
+			<img src="Images/Logo-4.png" alt="website logo" width="200">
+			<input type="text" name="search" 
+			class="mysearchbar" placeholder="search" size="20">
+			<input type="submit" value="search" size="2.5" class="mysearchbutton">
+
+			<ul class="mymenu">
+				<li class="drop"><a href="javascript:void(0)" >Menu</a>
+					<div class="drop-content">
+						<a href="index2.html">Home</a>
+						<a href=blog.html"">Blog</a>
+						<a href="media.html">Media</a>
+						<a href="signup.html">Signup</a>
+						<a href="login.html">Login</a>
+						<a href="contact.html">Contact</a>
+						<a href="about.html">About</a>
+					</div>
+					</li>
+				<li><a href="blog.html">Blog</a></li>
+				<li class="drop2"><a href="javascript:void(0)">Media</a>
+						<div class="mediadrop-content">
+							<a href="">Video</a>
+							<a href="">Audio</a>
+							<a href="">Photos</a>
+							<a href="">Slides</a>
+						</div>
+				</li>
+				<li><a href="signup.html">Signup</a></li>
+				<li><a href="login.html">Login</a></li>
+				<li><a href="contact.html">Contact</a></li>
+				<li><a href="about.html" class="active">About</a></li>
+			</ul>
+		</nav>
+		<span data-toggle-target=".navbar" class="toggle-btn"><img src="images/menu.png" alt="menu toggle button"> </span>
+	</div>
+	</header>
+	<div class="site-container">
+		<div class="about-me">
+			<h1>Reginald Owusu Ansah</h1>
+		</div>
+		<div>
+			<img src="C:/Users/REG/Desktop/Reggie/Coventry/Passport Picture.jpg" alt="Reginald Adino profile Picture" class="profile-pic">
+			<p class="A">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud <strong>exercitation</strong> ullamco laboris nisi ut aliquip ex ea commodo <em>consequat.</em> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</div>
+		<hr>
+		<h3>Courses taught by Reginald</h3>
+		<ul>
+			<li>Complete Software Developer bootcamp</li>
+			<li>101 principles of a programmer</li>
+		</ul>
+		<hr>
+		<h3>Work Experience</h3>
+		<table class="tableskills" cellspacing="30">
+			<tr>
+				<th>Date</th>
+				<th>Experience</th>
+			</tr>
+			<tr>
+				<td>2015 - 2016</td>
+				<td>Python programming</td>
+			</tr>
+			<tr>
+				<td>2020 - date</td>
+				<td>Website Development</td>
+			</tr>
+		</table>
+		<hr>
+		<h3>Skills & Hobbies</h3>
+		<table cellspacing="30" class="tableskills">
+				<tr>
+					<td>
+						<table>
+							<tr>
+								<td>Python</td>
+								<td>⭐ ⭐ ⭐ ⭐ ⭐</td>
+							</tr>
+							<tr>
+								<td>Javascript</td>
+								<td>⭐ ⭐ ⭐ ⭐</td>
+							</tr>
+							<tr>
+								<td>Java</td>
+								<td>⭐ ⭐ ⭐ </td>
+							</tr>
+							<tr>
+								<td>C#</td>
+								<td>⭐⭐</td>
+							</tr>
+							<tr>
+								<td>C</td>
+								<td>⭐ </td>
+							</tr>
+						</table>
+					</td>
+					<td>
+						<table>
+							<tr>
+								<td>Swimming</td>
+								<td>⭐ </td>
+								
+							</tr>
+							<tr>
+								<td>Football</td>
+								<td>⭐⭐</td>
+							</tr>
+							<tr>
+								<td>Martial Arts Shotokhan</td>
+								<td>⭐ ⭐ ⭐ </td>
+							</tr>
+							<tr>
+								<td>Basketball</td>
+								<td>⭐ ⭐ ⭐ ⭐</td>
+							</tr>
+							<tr>
+								<td>Gyming</td>
+								<td>⭐ ⭐ ⭐ ⭐ ⭐</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+		</table>
+	</div>
+	<footer>
+		<div class="bottom-site">
+			<a href="https://www.facebook.com" class="footer-link">Facebook</a>
+			<a href="https://www.twitter.com" class="footer-link">Twitter</a>
+			<a href="https://www.google.com" class="footer-link">Google</a>
+			<p class="copyright">&copy;2021 AdinoRights</p>
+		</div>
+		</div>
+	</footer>
+</body>
+</html>

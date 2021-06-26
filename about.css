@@ -1,0 +1,19 @@
+table{
+	margin: 0 auto;
+	padding-top: 30px;
+
+}
+
+.about-me{
+	color: #90ee90;
+	padding:50px 20px;
+}
+.profile-pic{
+	width: 200px;
+	height: 200px;
+	margin: 20px auto;
+}
+.A{
+	width: 50%;
+	margin: auto;
+}

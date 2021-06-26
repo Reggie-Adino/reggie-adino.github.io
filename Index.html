@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Front End Design</title>
+	<meta charset="utf-8">
+	<meta name="Front End Web Design" content="Complete Website Design">
+	<meta name="keywords" content="HTML,CSS,Front End">
+	<meta name="author" content="Reggie Adino">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="frontend.css" rel="stylesheet" type="text/css" />
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Montserrat:ital@1&family=Sacramento&display=swap" rel="stylesheet">
+	<link rel="icon" href="images/icon.ico">
+	<link rel="stylesheet" type="text/css" href="popup.css ">
+	<script type="text/javascript" src="frontend.js"></script>
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/declarativeToggle.js"></script>
+</head>
+<body>
+	<header>
+	<div class="headermenu clear">
+		<nav class="navbar clear">
+			<img src="Images/Logo-4.png" alt="website logo" width="200">
+			<input type="text" name="search" 
+			class="mysearchbar" placeholder="search" size="20">
+			<input type="submit" value="search" size="2.5" class="mysearchbutton">
+
+			<ul class="mymenu">
+				<li class="drop"><a href="javascript:void(0)" class="active">Menu</a>
+					<div class="drop-content">
+						<a href="index2.html">Home</a>
+						<a href=blog.html"">Blog</a>
+						<a href="media.html">Media</a>
+						<a href="signup.html">Signup</a>
+						<a href="login.html">Login</a>
+						<a href="contact.html">Contact</a>
+						<a href="about.html">About</a>
+					</div>
+					</li>
+				<li><a href="blog.html">Blog</a></li>
+				<li class="drop"><a href="media.html javascript:void(0)" >Media</a>
+						<div class="drop-content">
+							<a href="media.html">Video</a>
+							<a href="media.html">Audio</a>
+							<a href="media.html">Photos</a>
+							<a href="media.html">Slides</a>
+						</div>
+				</li>
+				<li><a href="signup.html">Signup</a></li>
+				<li><a href="login.html">Login</a></li>
+				<li><a href="contact.html">Contact</a></li>
+				<li><a href="about.html">About</a></li>
+			</ul>
+		</nav>
+		<span data-toggle-target=".navbar" class="toggle-btn"><img src="images/menu.png" alt="menu toggle button"> </span>
+	</div>
+	</header>
+	<div class="site-container">
+		<div class="top-site">
+			<h1>Front-End Developers</h1>
+			<h2>We build awesome designs... Join us today!</h2>
+			<img src="Images/earth1.png" alt="front end header picture" class="green-earth" width=>
+		</div>
+		<div class="middle-site">
+			<div class="first-middle-site">
+				<img src="Images/Kitty.webp" alt="SwiftyKitties Developers">
+				<h2>SwiftyKitties Developers</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+			</div>
+			<hr>
+			<div class="second-middle-site">
+					<h2>Our Services</h2>
+					<div class="our-services">
+						<img src="images/work1.png" class="service-1-img" alt="service-1" width="150">
+						<h3>Web Template Design</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Fermentum leo vel orci porta. Dictum non consectetur a erat nam at lectus urna. Ullamcorper morbi tincidunt ornare massa eget. Vitae nunc sed velit dignissim sodales ut eu sem integer. Nibh nisl condimentum id venenatis a condimentum.</p>
+					</div>
+					<div class="our-services">
+						<img src="images/work2.png" class="service-2-img" alt="service-2" width="150">
+						<h3>Responsive Web Design</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Fermentum leo vel orci porta. Dictum non consectetur a erat nam at lectus urna. Ullamcorper morbi tincidunt ornare massa eget. Vitae nunc sed velit dignissim sodales ut eu sem integer. Nibh nisl condimentum id venenatis a condimentum.</p>
+					</div>
+			    </div>
+
+			<hr>
+			<div class="third-middle-site">
+				<div>
+					<h2>Need our services?</h2>
+					<h3>Hit the contact box and drop us a message</h3>
+					<p class="contact-message">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+					<!--<a class="myButton" href="mailto:owusuansah.reginald@gmail.com">contact us</a>-->
+				</div>
+			</div>
+
+			<div class="MyPop">
+				<div id="MessageBox"> 
+					<!--starting Box Popup -->
+					<div id="Popupcontact">
+						<!--contact Form -->
+						<form action="#" id="form" method="POST" name="Form">
+							<img src="images/icon1.png" id="close" width="50" onclick="hide_form()">
+							<h2>Contact Us</h2>
+							<input type="text" name="name" id="name" placeholder="Name">
+							<input type="email" name="email" placeholder="Email" id="email">
+							<textarea id="msg" name="message" placeholder="Message"></textarea>
+							<a href="javascript:input_fields()" id="submit">Send Message</a>
+						</form>
+					</div>	
+					<!--This is end of Popup form-->		
+				</div>
+				<a class="myButton" id="popup" onclick="show_form()">contact us</a>
+				<!--This is end of popupMessage-->
+
+			</div>
+		</div>
+	<footer>
+		<div class="bottom-site">
+			<a href="https://www.facebook.com" class="footer-link">Facebook</a>
+			<a href="https://www.twitter.com" class="footer-link">Twitter</a>
+			<a href="https://www.google.com" class="footer-link">Google</a>
+			<p class="copyright">&copy;2021 AdinoRights</p>
+		</div>
+		</div>
+	</footer>
+</body>
+</html>

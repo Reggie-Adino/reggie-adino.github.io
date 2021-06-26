@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Front End Design</title>
+	<meta charset="utf-8">
+	<meta name="Front End Web Design" content="Complete Website Design">
+	<meta name="keywords" content="HTML,CSS,Front End">
+	<meta name="author" content="Reggie Adino">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="frontend.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" type="text/css" href="login.css">
+	<link rel="icon" href="images/icon.ico">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Montserrat:ital@1&family=Sacramento&display=swap" rel="stylesheet">
+	<script type="text/javascript" src="js/declarativeToggle.js"></script>
+</head>
+<body>
+	<header>
+	<div class="headermenu clear">
+		<nav class="navbar clear">
+			<img src="Images/Logo-4.png" alt="website logo" width="200">
+			<input type="text" name="search" 
+			class="mysearchbar" placeholder="search" size="20">
+			<input type="submit" value="search" size="2.5" class="mysearchbutton">
+
+			<ul class="mymenu">
+				<li class="drop"><a href="javascript:void(0)" class="active">Menu</a>
+					<div class="drop-content">
+						<a href="index2.html">Home</a>
+						<a href=blog.html"">Blog</a>
+						<a href="media.html">Media</a>
+						<a href="signup.html">Signup</a>
+						<a href="login.html">Login</a>
+						<a href="contact.html">Contact</a>
+						<a href="about.html">About</a>
+					</div>
+					</li>
+				<li><a href="blog.html">Blog</a></li>
+				<li class="drop2"><a href="javascript:void(0)">Media</a>
+						<div class="mediadrop-content">
+							<a href="media.html">Video</a>
+							<a href="media.html">Audio</a>
+							<a href="media.html">Photos</a>
+							<a href="media.html">Slides</a>
+						</div>
+				</li>
+				<li><a href="signup.html">Signup</a></li>
+				<li><a href="login.html" class="active">Login</a></li>
+				<li><a href="contact.html">Contact</a></li>
+				<li><a href="about.html">About</a></li>
+			</ul>
+		</nav>
+		<span data-toggle-target=".navbar" class="toggle-btn"><img src="images/menu.png" alt="menu toggle button"> </span>
+	</div>
+	</header>
+	<div class="site-container">
+		<div class="login-header">
+			<h1>Login</h1>
+		</div>
+			<form id="loginform" action="media.html" method="POST">
+				<h2>Sign in</h2>
+				<div class="welcome">
+					<p>
+						<label for="email">Your Email</label>
+						<input type="email" name="email" placeholder="example@domain.com" required="required">
+					</p>
+					<p>
+						<label for="password">Password</label>
+						<input type="password" name="password" placeholder="**********" required="required">
+					</p>
+					<p class="KeepLogin">
+						<input type="checkbox" name="keep" id="keep" value="keep">
+						<label for="keep">keep me loggged in</label>
+					</p>
+					<p class="recoverpassword">
+						<a href="#recoverpassword">forgot password</a>
+					</p>
+					<input type="submit" value="Login">
+					<p class="join">
+						<label for="new_member">Not yet a member</label>
+						<a href="signup.html">Register</a>
+					</p>
+				</div>
+			</form>
+		</div>
+	</div>
+	<footer>
+		<div class="bottom-site">
+			<a href="https://www.facebook.com" class="footer-link">Facebook</a>
+			<a href="https://www.twitter.com" class="footer-link">Twitter</a>
+			<a href="https://www.google.com" class="footer-link">Google</a>
+			<p class="copyright">&copy;2021 AdinoRights</p>
+		</div>
+		</div>
+	</footer>
+</body>
+</html>
